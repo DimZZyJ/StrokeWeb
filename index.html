@@ -9,12 +9,50 @@
     <title>Калькулятор инсульта</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Калькулятор инсульта</a>
+        </div>
+    </nav>
+
     
 
+    <div class="container bg-light">
+        <form id="calculator" action="">
+            <h3>Пройдите тестирование</h3>
+            <div class="row">
+                <div class="question-wraper col-6">
+                    <div class="question">Присутствует ли у вас повышенное давление?</div>
+                    <input type="radio" name="hypertension" value="1" >Да
+                    <input type="radio" name="hypertension" value="0" >Нет
+                </div>
+
+                <div class="question-wraper col-6">
+                    <div class="question">Присутствуют ли у вас болезни сердца?</div>
+                    <input type="radio" name="heart" value="1" >Да
+                    <input type="radio" name="heart" value="0" >Нет
+                </div>
+
+                <div class="question-wraper col-6">
+                    <div class="question">Ваш возраст</div>
+                    <input placeholder="Полных лет" type="number" name="age" id="age">
+                </div>
+
+                <div class="question-wraper col-6">
+                    <div class="question">Уровень сахара</div>
+                    <input placeholder="на 100мл" type="number" name="sugar" id="sugar">
+                </div>
+                <div class="calc-control">
+                    <button class="btn btn-outline-danger me-1" type="reset" form="calculator">Сброс</button>
+                    <button class="btn btn-outline-success" type="submit" onclick="modelCalc()" form="calculator">Расчет</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
 
     
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
