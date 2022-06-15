@@ -6,39 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    
     <title>Калькулятор инсульта</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Калькулятор инсульта</a>
+            <a class="navbar-brand" href="#">
+                <img src="images/stop.png" alt="" style="height: 30px; width: 30px;">
+                Стоп Инсульт
+            </a>
         </div>
     </nav>
 
-    
+    <div class="container-fluid header">
+        
+    </div>
 
     <div class="container bg-light">
         <form id="calculator" action="">
             <h3>Пройдите тестирование</h3>
-            <div class="row">
-                <div class="question-wraper col-6">
+            <div >
+                <div class="question-wraper ">
                     <div class="question">Присутствует ли у вас повышенное давление?</div>
                     <input type="radio" name="hypertension" value="1" >Да
                     <input type="radio" name="hypertension" value="0" >Нет
                 </div>
 
-                <div class="question-wraper col-6">
+                <div class="question-wraper ">
                     <div class="question">Присутствуют ли у вас болезни сердца?</div>
                     <input type="radio" name="heart" value="1" >Да
                     <input type="radio" name="heart" value="0" >Нет
                 </div>
 
-                <div class="question-wraper col-6">
+                <div class="question-wraper ">
                     <div class="question">Ваш возраст</div>
                     <input placeholder="Полных лет" type="number" name="age" id="age">
                 </div>
 
-                <div class="question-wraper col-6">
+                <div class="question-wraper ">
                     <div class="question">Уровень сахара</div>
                     <input placeholder="на 100мл" type="number" name="sugar" id="sugar">
                 </div>

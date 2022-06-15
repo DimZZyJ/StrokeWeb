@@ -2,6 +2,11 @@ h1,h2,h3{
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+    color: #212529 !important;
+}
+
 .question-wraper{
     text-align: center; 
 }
@@ -14,4 +19,16 @@ input::-webkit-inner-spin-button {
 
 .calc-control{
     text-align: end;
+}
+
+.navbar{
+    background-color: #42bca4;
+}
+
+.header{
+    
+}
+
+.header-image{
+    
 }
