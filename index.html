@@ -7,8 +7,8 @@
     
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    
-    <title>STOP инсульт</title>
+    <link rel="icon" type="image/png" href="images/stop.png"/>
+    <title>Инсульт</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md ">
@@ -43,36 +43,58 @@
         </div>
     </div>
 <!-- HEADER SECTION END-->
+<!-- PUNCH SECTION START -->
     <div class="title-section">
         <h2>Узнай как распознать инсульт</h2>
         <p>По методике У.Д.А.Р</p>
     </div> 
-<!-- PUNCH SECTION START -->
     <div class="container punch">
         <div class="row">
             <div class="col-md-3 punch-item">
                 <h3 class="punch-title">У.улыбка</h3>
-                <img class="punch-img rounded-circle" src="images/1punch.png" alt="">
+                <img class="punch-img " src="images/1punch.png" alt="">
                 <p class="punch-text">При инсульте улыбка больного как правило кривая, уголок губ с одной стороны может быть направлен вниз, а не вверх</p>
             </div>
             <div class="col-md-3 punch-item">
                 <h3 class="punch-title">Д.движение</h3>
-                <img class="punch-img rounded-circle" src="images/2punch.png" alt="">
+                <img class="punch-img " src="images/2punch.png" alt="">
                 <p class="punch-text">Поднять одновременно вверх обе руки, обе ноги — одна из парных конечностей будет подниматься медленнее и ниже</p>
             </div>
             <div class="col-md-3 punch-item">
                 <h3 class="punch-title">А.артикуляция</h3>
-                <img class="punch-img rounded-circle" src="images/3punch.png" alt="">
+                <img class="punch-img " src="images/3punch.png" alt="">
                 <p class="punch-text">Произнести слово «артикуляция» или несколько фраз — после инсульта дикция нарушается, речь звучит заторможено или просто странно</p>
             </div>
             <div class="col-md-3 punch-item">
                 <h3 class="punch-title">Р.решение</h3>
-                <img class="punch-img rounded-circle" src="images/4punch.png" alt="">
+                <img class="punch-img " src="images/4punch.png" alt="">
                 <p class="punch-text">Если вы обнаружили нарушения хотя бы в одном из пунктов — пора принимать решение и звонить в скорую помощь</p>
             </div>
         </div>
     </div>
 <!-- PUNCH SECTION END -->
+<!-- WHY US SECTION START -->
+<div class="title-section">
+    <h2>Почему стоит пройти тестирование</h2>
+    <p>Об оценке рисков и исследованиях</p>
+</div> 
+<div class="container whyus">
+    <div class="row">
+        <div class="col-md-4">
+            <h3 class="whyus-title">Вклад в науку</h3>
+            <p>Данные тестирования будут собраны для исследования факторов возникновения инсульта. Для последующей разработки профилактических или лечебных мер</p>
+        </div>
+        <div class="col-md-4">
+            <h3 class="whyus-title">Профилактика</h3>
+            <p>Информация о рисках потенциально может помочь человеку решиться пройти обслдеование у специалиста,что может спасти жизнь</p>
+        </div>
+        <div class="col-md-4">
+            <h3 class="whyus-title">Осведомленность</h3>
+            <p>Понимание того какие факторы вляют на возникновение инсульта, могут потенциально уменьшить вероятность его возникновения путем мотивирования человека на избежание этих факторов</p>
+        </div>
+    </div>
+</div>
+<!-- WHY US SECTION END -->
 <!-- CALCULATOR SECTION START -->
     <div class="container bg-light" id="calc-id">
         <form id="calculator" action="">
@@ -99,6 +121,12 @@
                     <div class="question">Уровень сахара</div>
                     <input placeholder="на 100мл" type="number" name="sugar" id="sugar">
                 </div>
+
+                <div id="result"> 
+                    <p>Ваш результат:</p>
+                    <p id="result-number"></p> 
+                </div>
+
                 <div class="calc-control">
                     <button class="btn btn-outline-danger me-1" type="reset" form="calculator">Сброс</button>
                     <button class="btn btn-outline-success" type="submit" onclick="modelCalc()" form="calculator">Расчет</button>
@@ -108,7 +136,7 @@
     </div>
 <!-- CALCULATOR SECTION END -->
 <footer class="footer">
-    <p>Made by: Dmitry Zheltov</p> 
+    <p>Made by: <a href="https://github.com/DimZZyJ">DimZZyJ</a></p> 
 </footer>
     
     <script type="text/javascript" src="js/bootstrap.js"></script>

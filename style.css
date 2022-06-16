@@ -51,6 +51,17 @@ input::-webkit-inner-spin-button {
     margin-bottom: 10px;
 }
 
+#result{
+    text-align: center;
+    display: none;
+}
+
+#result-number{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
+
 .navbar{
     background-color: #42bca4;
 }
