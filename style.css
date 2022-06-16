@@ -2,6 +2,10 @@ h1,h2,h3{
     text-align: center;
 }
 
+h1{
+    font-weight: 700;
+}
+
 a{
     text-decoration: none;
     color: #212529 !important;
@@ -26,9 +30,38 @@ input::-webkit-inner-spin-button {
 }
 
 .header{
-    
+    background-image: url('https://www.umbriajournal.com/wp-content/uploads/2019/04/ricerca.png');
+    background-size: cover;
 }
 
-.header-image{
-    
+.header-logoMoto{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.moto-img-wraper{
+    display: flex;
+    align-items: center;
+}
+
+.moto-img{
+    max-width: 100%;
+}
+
+.moto-text-wraper{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:500px){
+    .moto-img-wraper{
+        max-width: 50%;
+        
+    }
+    .moto-img{
+        max-width: 80%;
+    }
+    .moto-text-wraper{
+        max-width: 50%;
+    }
 }
