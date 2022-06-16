@@ -11,6 +11,11 @@ a{
     color: #212529 !important;
 }
 
+.title-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .question-wraper{
     text-align: center; 
 }
@@ -47,6 +52,10 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
+.moto-text-wraper{
+    color: #fff;
+}
+
 .moto-img{
     max-width: 100%;
 }
@@ -66,22 +75,30 @@ input::-webkit-inner-spin-button {
     text-align: start;
 }
 
+.Moto p:last-of-type{
+    text-align: center;
+}
+
 .Moto h2{
     font-size: 42px;
     color: #fff;
 }
 
 .Action-button{
-    background-color: #fff;
-    padding: 10px;
+    background-color:#fff;
+    padding: 5px 10px;
     font-weight: 600;
     border-radius: 10px;
+}
+
+.Action-button:hover{
+    background-color: #DCDCDC;
 }
 
 @media (max-width:550px){
     .moto-img-wraper{
         max-width: 50%;
-        justify-content: center;
+        justify-content: end;
     }
     .moto-img{
         max-width: 80%;
@@ -90,4 +107,15 @@ input::-webkit-inner-spin-button {
         max-width: 50%;
     }
 
+}
+
+.punch-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.punch-img{
+    max-width: 100%;
+    
 }
