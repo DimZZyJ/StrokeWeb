@@ -23,6 +23,7 @@ input::-webkit-inner-spin-button {
 
 .calc-control{
     text-align: end;
+    margin-top: 10px;
 }
 
 .navbar{
@@ -30,7 +31,9 @@ input::-webkit-inner-spin-button {
 }
 
 .header{
-    background-image: url('https://www.umbriajournal.com/wp-content/uploads/2019/04/ricerca.png');
+    background: 
+		linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.8)), 
+		url('images/header-back.png');
     background-size: cover;
 }
 
@@ -53,10 +56,32 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
-@media (max-width:500px){
+.Moto{
+ text-align: center;
+ font-size: 24px;
+}
+
+.Moto p{
+    color: #fff;
+    text-align: start;
+}
+
+.Moto h2{
+    font-size: 42px;
+    color: #fff;
+}
+
+.Action-button{
+    background-color: #fff;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+@media (max-width:550px){
     .moto-img-wraper{
         max-width: 50%;
-        
+        justify-content: center;
     }
     .moto-img{
         max-width: 80%;
@@ -64,4 +89,5 @@ input::-webkit-inner-spin-button {
     .moto-text-wraper{
         max-width: 50%;
     }
+
 }
