@@ -11,6 +11,7 @@
     <title>Инсульт</title>
 </head>
 <body>
+    
     <nav class="navbar navbar-expand-md ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -97,7 +98,7 @@
 <!-- WHY US SECTION END -->
 <!-- CALCULATOR SECTION START -->
     <div class="container bg-light" id="calc-id">
-        <form id="calculator" action="">
+        <form id="calculator" method="post" action="send.php">
             <h3>Пройдите тестирование</h3>
             <div >
                 <div class="question-wraper ">
@@ -123,8 +124,8 @@
                 </div>
                 <div class="question-wraper ">
                     <div class="question">Ваш биологический пол</div>
-                    <input type="radio" name="sex" value="m" >Муж
-                    <input type="radio" name="sex" value="f" >Жен
+                    <input type="radio" name="sex" value="1" >Муж
+                    <input type="radio" name="sex" value="0" >Жен
                 </div>
                 <div class="question-wraper ">
                     <div class="question">Курите ли вы?</div>
