@@ -101,26 +101,47 @@
             <h3>Пройдите тестирование</h3>
             <div >
                 <div class="question-wraper ">
-                    <div class="question">Присутствует ли у вас повышенное давление?</div>
+                    <div class="question">Присутствует ли у вас повышенное давление?*</div>
                     <input type="radio" name="hypertension" value="1" >Да
                     <input type="radio" name="hypertension" value="0" >Нет
                 </div>
 
                 <div class="question-wraper ">
-                    <div class="question">Присутствуют ли у вас болезни сердца?</div>
+                    <div class="question">Присутствуют ли у вас болезни сердца?*</div>
                     <input type="radio" name="heart" value="1" >Да
                     <input type="radio" name="heart" value="0" >Нет
                 </div>
 
                 <div class="question-wraper ">
-                    <div class="question">Ваш возраст</div>
+                    <div class="question">Ваш возраст*</div>
                     <input placeholder="Полных лет" type="number" name="age" id="age">
                 </div>
 
                 <div class="question-wraper ">
-                    <div class="question">Уровень сахара</div>
+                    <div class="question">Уровень сахара*</div>
                     <input placeholder="на 100мл" type="number" name="sugar" id="sugar">
                 </div>
+                <div class="question-wraper ">
+                    <div class="question">Ваш биологический пол</div>
+                    <input type="radio" name="sex" value="m" >Муж
+                    <input type="radio" name="sex" value="f" >Жен
+                </div>
+                <div class="question-wraper ">
+                    <div class="question">Курите ли вы?</div>
+                    <input type="radio" name="smoking" value="1" >Да
+                    <input type="radio" name="smoking" value="0" >Нет
+                </div>
+                <div class="question-wraper ">
+                    <div class="question">Место жительства</div>
+                    <input type="radio" name="residence" value="Urban" >Город
+                    <input type="radio" name="residence" value="Rural" >За пределами
+                </div>
+                <div class="question-wraper ">
+                    <div class="question">Был ли у вас инсульт ?</div>
+                    <input type="radio" name="stroke" value="1" >Да
+                    <input type="radio" name="stroke" value="0" >Нет
+                </div>
+
 
                 <div id="result"> 
                     <p>Ваш результат:</p>
@@ -128,8 +149,9 @@
                 </div>
 
                 <div class="calc-control">
-                    <button class="btn btn-outline-danger me-1" type="reset" form="calculator">Сброс</button>
-                    <button class="btn btn-outline-success" type="submit" onclick="modelCalc(); return false" form="calculator">Расчет</button>
+                    <button class="btn btn-outline-info" type="submit">Поделиться данными</button>
+                    <button class="btn btn-outline-danger me-1" type="reset">Сброс</button>
+                    <button class="btn btn-outline-success" onclick="modelCalc(); return false">Расчет</button>
                 </div>
             </div>
         </form>
